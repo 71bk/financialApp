@@ -19,7 +19,8 @@ android {
         applicationId = "com.financialapp.financial_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // 明確釘 Android 8.0+（見 spec/adr/ADR-001）：Phase 2 通知監聽需要，不吃 Flutter 預設。
+        minSdk = 26
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
